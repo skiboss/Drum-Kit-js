@@ -7,8 +7,6 @@ for (let i = 0; i < numberOfDrums; i++) {
         audio.play();
 })};
 
-
-
 // Higher Order Function Calculator
 function add(num1, num2) {
     return num1 + num2;
