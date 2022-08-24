@@ -6,14 +6,15 @@ for (let i = 0; i < numberOfDrums; i++) {
         var buttonInnerHTML = this.innerHTML;
 
         makeSound(buttonInnerHTML);
-        
+        buttonAnimation(buttonInnerHTML);
     })
 };
 
 document.addEventListener("keydown", function(event) {
 
     makeSound(event.key);
-})
+    buttonAnimation(event.key);
+});
 
 function makeSound(key) {
     switch (key) {
@@ -55,7 +56,17 @@ function makeSound(key) {
             break;
     }
 
-}
+};
+
+function buttonAnimation(currentKey) {
+    let activeKey = document.querySelector("." + currentKey);
+    activeKey.classList.add("pressed");
+
+    setTimeout(function() {
+        activeKey.classList.remove("pressed");
+    }, 100);
+    
+};
 
 
 // Higher Order Function Calculator
