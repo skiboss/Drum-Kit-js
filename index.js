@@ -1,4 +1,4 @@
-// detecting buttonPress
+// detecting click
 let numberOfDrums = document.querySelectorAll(".drum").length;
 
 for (let i = 0; i < numberOfDrums; i++) {
@@ -9,7 +9,7 @@ for (let i = 0; i < numberOfDrums; i++) {
         buttonAnimation(buttonInnerHTML);
     })
 };
-
+// detecting buttonPress
 document.addEventListener("keydown", function(event) {
 
     makeSound(event.key);
@@ -64,7 +64,7 @@ function buttonAnimation(currentKey) {
 
     setTimeout(function() {
         activeKey.classList.remove("pressed");
-    }, 100);
+    }, 200);
     
 };
 
