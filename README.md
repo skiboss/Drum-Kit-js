@@ -2,7 +2,7 @@
 
 ## A project to solidify understanding of JavaScript functions and methods while still playing around more conditionals like for loop and switch statement.
 ## I also used the Audio() methoud here to play a sound depending on the button clicked or key pressed.
-## Live page at {https://skiboss.github.io/Drum-Kit-js/}
+## Live page at { https://skiboss.github.io/Drum-Kit-js/ }
 
 ## STEPS TO PLAY
 ### ___1) Clone repo
